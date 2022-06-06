@@ -29,33 +29,34 @@
                             <div id="row1">
                                 <div>
                                     <label for="firstName">FIRST NAME</label>
-                                    <input type="text" id="firstName">
+                                    <input type="text" id="firstName" placeholder=" " pattern=".*" required>
                                 </div>
                                 <div>
                                     <label for="lastName">LAST NAME</label>
-                                    <input type="text" id="lastName">
+                                    <input type="text" id="lastName" placeholder=" " required>
                                 </div>
                             </div>
 
                             <div id="row2">
                                 <div>
                                     <label for="email">EMAIL</label>
-                                    <input type="text" id="email">
+                                    <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        placeholder=" " required>
                                 </div>
                                 <div>
                                     <label for="phoneNum">PHONE NUMBER</label>
-                                    <input type="text" id="phoneNum">
+                                    <input type="tel" id="phoneNum" placeholder=" " required>
                                 </div>
                             </div>
 
                             <div id="row3">
                                 <div>
                                     <label for="password">PASSWORD</label>
-                                    <input type="text" id="password">
+                                    <input type="password" id="password" placeholder=" " required>
                                 </div>
                                 <div>
                                     <label for="confirmPassword">CONFIRM PASSWORD</label>
-                                    <input type="text" id="confirmPassword">
+                                    <input type="password" id="confirmPassword" placeholder=" " required>
                                 </div>
                             </div>
                         </fieldset>
