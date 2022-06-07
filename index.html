@@ -24,7 +24,7 @@
             <div id="right-mid">
                 <p>Let's do this!</p>
                 <div id="formContainer">
-                    <form action="">
+                    <form id="signUpForm" action="">
                         <fieldset>
                             <div id="row1">
                                 <div>
@@ -52,18 +52,27 @@
                             <div id="row3">
                                 <div>
                                     <label for="password">PASSWORD</label>
-                                    <input type="password" id="password" placeholder=" " required autocomplete="new-password">
+                                    <input type="password" id="password" placeholder=" " required
+                                        autocomplete="new-password">
+                                    <span id="passwordLabel"></span>
                                 </div>
                                 <div>
                                     <label for="confirmPassword">CONFIRM PASSWORD</label>
-                                    <input type="password" id="confirmPassword" placeholder=" " required autocomplete="new-password">
+                                    <input type="password" id="confirmPassword" placeholder=" " required
+                                        autocomplete="new-password">
                                 </div>
                             </div>
                         </fieldset>
                     </form>
                 </div>
             </div>
-            <div id="right-bottom"></div>
+
+            <div id="right-bottom">
+                <div class="padding">
+                    <button type="submit" form="signUpForm">Create Account</button>
+                    <p>Already have an account? Lot in</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

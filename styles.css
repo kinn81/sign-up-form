@@ -81,6 +81,11 @@ body {
 }
 
 
+.padding {
+    padding: 50px 0px 0px 30px;
+}
+
+
 /*
 STYLING THE FORM
 */
@@ -119,6 +124,12 @@ fieldset {
     padding: 0;
 }
 
+form {
+    padding-bottom: 5px;
+}
+
+
+
 /* 
 Each ROW of the form (a div that contains the inputs)
 */
@@ -128,14 +139,20 @@ fieldset>* {
     gap: 20px;
 }
 
-.passwordMatch {
+.passwordNoMatchLabel {
 
 
 }
 
 .passwordNoMatch {
     border: 1px solid red;
+ 
+}
 
+.passwordLabel::before {
+    content: "Passwords do not match";
+    font-size: clamp(8px, .75vw, 17px);  
+    color: red;
 }
 
 /*
@@ -146,3 +163,4 @@ fieldset div div {
     flex-direction: column;
     gap: 5px;
 }
+
